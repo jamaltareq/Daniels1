@@ -1,0 +1,298 @@
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.612), rgba(0, 0, 0, 0.712)), url(./../image/bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background: #00000050;
+}
+
+.nav-link.active {
+    position: relative;
+    background-color: transparent !important;
+    color: #000;
+    font-weight: 800;
+}
+
+.nav-link.active::before {
+    content: "";
+    width: 60%;
+    height: 2px;
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+.portfolio .nav-link.active::before {
+    background-color: #000 !important;
+}
+
+.centercontent {
+    margin-top: 94px;
+}
+
+.listsocil {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.509);
+    margin: 5px;
+    border-radius: 50% !important;
+    list-style-type: none;
+}
+
+.fcc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editation {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.bgimage {
+    position: relative;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h6 {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+p {
+    line-height: 1.6;
+    margin: 30px 0;
+    font-size: 16px;
+    color: #748182;
+}
+
+.image::before {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 20px;
+    bottom: -30px;
+    background-image: url(../image/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.progress {
+    height: 25px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset !important;
+}
+
+.fit-content {
+    width: fit-content;
+}
+
+.spanabout {
+    letter-spacing: 3px;
+    color: #b5b5b5;
+}
+
+
+/* ------------services----------- */
+
+.services,
+.portfolio,
+.testimonials,
+.team {
+    background-color: #f7f7f7;
+    padding: 100px 0;
+}
+
+.bg-bots h2 {
+    z-index: 55;
+}
+
+.bg-bots::after {
+    content: "";
+    width: 15%;
+    height: 10px;
+    position: absolute;
+    bottom: -5px;
+    left: 43%;
+    background-image: url(../image/dots.png);
+    z-index: 0;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    background-color: #f7f7f7;
+    transition: .5s;
+}
+
+.paragra {
+    font-size: 14px;
+}
+
+.hover-icon:hover .icon {
+    background-color: black;
+    color: white;
+}
+
+
+/* ----------------------portfolio---------- */
+
+.portfolio {
+    background-color: white;
+}
+
+.items {
+    position: relative;
+}
+
+.items .layer {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.858);
+    top: 10px;
+    bottom: 10px;
+    right: 25px;
+    left: 25px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.icono {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    color: white;
+    transition: .5s;
+}
+
+.icono:hover {
+    background-color: #ffffff;
+    border: 1px solid black;
+    color: black !important;
+}
+
+.icono:hover svg {
+    color: black !important;
+}
+
+.titel {
+    margin-bottom: 30px;
+    transition-delay: .5s;
+    transition: .5s;
+}
+
+.icono svg {
+    font-size: 12px !important;
+}
+
+.items:hover .layer {
+    opacity: 1;
+}
+
+.items:hover .titel {
+    margin-bottom: 0;
+}
+
+.imagetest {
+    width: 100px;
+    margin: 16px auto 180px;
+    border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+    .imagetest {
+        margin: 16px auto 250px;
+    }
+}
+
+.btnslid {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+
+.carousel-indicators {
+    bottom: -30px;
+}
+
+.card-team {
+    background-color: #5b5b5b;
+    padding: 0;
+}
+
+.card-team .image {
+    overflow: hidden;
+    width: 100%;
+}
+
+.card-team .image img {
+    transition: .5s;
+}
+
+.card-team .image:hover img {
+    transform: scale(1.2);
+}
+
+.layers {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    right: 60px;
+    bottom: 150px;
+    background-color: #ffffffd8;
+    z-index: 5;
+    transform: rotateY(180deg);
+    transition: .5s;
+    opacity: 0;
+}
+
+.layers:hover+image img {
+    transform: scale(1.2);
+}
+
+.card-team:hover .image .layers {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1.3, 1.3);
+}
+
+[id="exampleFormControlInput1"],
+.textarea {
+    background-color: #f7f7f7;
+    outline: 0;
+    border: none;
+    margin-bottom: 10px;
+}
+
+[id="exampleFormControlInput1"]:focus,
+.textarea:focus {
+    background-color: #f7f7f7;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    box-shadow: none;
+}
+
+.textarea {
+    max-height: 200px;
+}
+
+.contact .icon {
+    width: 60px;
+    height: 60px;
+}
+
+.darkenbtn:hover {
+    background-color: white !important;
+    border: 1px solid black !important;
+    color: black !important;
+}
